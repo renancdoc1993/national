@@ -40,8 +40,11 @@
               "@angular/material/prebuilt-themes/rose-red.css",
               "src/styles.css"
             ],
+            "stylePreprocessorOptions": {
+            "includePaths": ["src/theme"]
+            },
             "scripts": []
-          },
+            },
           "configurations": {
             "production": {
               "budgets": [

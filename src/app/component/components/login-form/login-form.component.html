@@ -1,0 +1,19 @@
+<div class="login-box">
+  <h2>Faça seu <span>Login Aqui</span></h2>
+<form [formGroup]="loginForm" (ngSubmit)="login()" class="formulario">
+  <!-- Campo de E-mail -->
+  <app-input-email  formControlName="email"></app-input-email>
+  <div *ngIf="loginForm.get('email')?.invalid && loginForm.get('email')?.touched">
+    <small class="error">E-mail inválido</small>
+  </div>
+
+  <!-- Campo de Senha -->
+  <app-input-password  formControlName="password"></app-input-password>
+  <div *ngIf="loginForm.get('password')?.invalid && loginForm.get('password')?.touched">
+    <small class="error">Senha deve ter pelo menos 6 caracteres</small>
+  </div>
+
+  <!-- Botão de Login -->
+  <app-button type="submit" size="full" [disabled]="loginForm.invalid">Login</app-button>
+</form>
+</div>

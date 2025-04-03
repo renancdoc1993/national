@@ -19,6 +19,8 @@ import { LoginCardComponent } from './component/components/login-card/login-card
 import { ButtonComponent } from './component/components/button/button.component';
 import { InputEmailComponent } from './component/components/input-email/input-email.component';
 import { InputPasswordComponent } from './component/components/input-password/input-password.component';
+import { LoginFormComponent } from "./component/components/login-form/login-form.component";
+import { CommonModule } from '@angular/common';
 
 
 
@@ -29,9 +31,8 @@ import { InputPasswordComponent } from './component/components/input-password/in
     HomeComponent,
     VideoPlayerComponent,
     LoginCardComponent,
-    ButtonComponent,
-    InputEmailComponent,
-    InputPasswordComponent
+    LoginFormComponent
+
   ],
   imports: [
     BrowserModule,
@@ -39,15 +40,26 @@ import { InputPasswordComponent } from './component/components/input-password/in
     FormsModule,
     RouterModule,
     AngularFireModule.initializeApp(environment.firebase), // 🔥 Inicializa Firebase
-    AngularFireAuthModule,  // 🔥 Módulo para autenticação
+    AngularFireAuthModule, // 🔥 Módulo para autenticação
     AngularFireAnalyticsModule, // 🔥 Módulo para analytics
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule,
+    CommonModule,
+    ReactiveFormsModule,
+    ButtonComponent,
+    InputPasswordComponent,
+    InputEmailComponent
+],
+
+
   providers: [
     provideFirebaseApp(() => initializeApp(environment.firebase)), // Inicializa Firebase
     provideAuth(() => getAuth()), // Configura autenticação
     provideFirestore(() => getFirestore()) // Configura Firestore
   ],
   bootstrap: [AppComponent]
+
+
 })
-export class AppModule { }
+
+export class AppModule {
+}

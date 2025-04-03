@@ -1,13 +1,13 @@
-import { Component, Input } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
+  standalone: true,
   selector: 'app-input-email',
-  standalone: false,
   templateUrl: './input-email.component.html',
-  styleUrl: './input-email.component.css'
+  styleUrls: ['./input-email.component.scss'],
+  imports: [FormsModule]
 })
 export class InputEmailComponent {
-  @Input() control!: FormControl; // FormControl recebido do formulário pai
-  @Input() placeholder: string = 'Digite seu email';
+  email: string = '';
 }

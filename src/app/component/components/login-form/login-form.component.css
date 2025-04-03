@@ -1,0 +1,38 @@
+.login-box{
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os elementos no centro */
+  gap: 20px; /* Espaço entre os elementos do formulário */
+}
+
+span{
+  color: #ffd600;
+}
+
+.campos {
+  display: flex;
+  flex-direction: column; /* Organiza os campos um abaixo do outro */
+  gap: 15px; /* Espaçamento entre os inputs */
+  width: 100%;
+}
+
+app-input-email,
+app-input-password {
+  width: 100%;
+  display: block;
+}
+
+app-button {
+  width: 100%;
+  display: block;
+}
