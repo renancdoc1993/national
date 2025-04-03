@@ -3,8 +3,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 97vh;
   background: linear-gradient(to right, #141414, #1f1f1f); /* Fundo estilo Netflix */
+  margin-top: 0;
 }
 
 /* Caixa do login */

@@ -1,10 +1,15 @@
 <div class="login-container">
+  <app-login-card title="Acesse sua conta">
+    <app-button type="primary">Login</app-button>
+  </app-login-card>
+
   <div class="login-box">
     <h2>Entrar</h2>
     <form (ngSubmit)="login()">
       <input type="email" [(ngModel)]="email" placeholder="E-mail" name="email" required>
       <input type="password" [(ngModel)]="password" placeholder="Senha" name="password" required>
       <button type="submit">Login</button>
+      <app-button type="primary">Login</app-button>
     </form>
 
     <div class="extra-options">

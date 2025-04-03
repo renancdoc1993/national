@@ -1,0 +1,5 @@
+<div class="input-group">
+  <label>Email</label>
+  <input type="email" [formControl]="control" [placeholder]="placeholder">
+  <small *ngIf="control.invalid && control.touched">Email inválido</small>
+</div>

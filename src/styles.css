@@ -23,3 +23,28 @@ body {
   width: 150px;
   border-radius: 8px;
 }
+
+/* Botao cor*/
+.btn-primary {
+  background-color: #6ECB98;
+}
+
+.btn-secondary {
+  background-color: #64B5F6;
+}
+
+.btn-warning {
+  background-color: #FFF176;
+}
+
+.btn-danger {
+  background-color: #FF8A80;
+}
+
+.btn-success {
+  background-color: #81C784;
+}
+
+.btn-info {
+  background-color: #4FC3F7;
+}
