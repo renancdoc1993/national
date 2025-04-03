@@ -1,0 +1,21 @@
+<div class="login-container">
+  <div class="login-box">
+    <h2>Entrar</h2>
+    <form (ngSubmit)="login()">
+      <input type="email" [(ngModel)]="email" placeholder="E-mail" name="email" required>
+      <input type="password" [(ngModel)]="password" placeholder="Senha" name="password" required>
+      <button type="submit">Login</button>
+    </form>
+
+    <div class="extra-options">
+      <a (click)="forgotPassword()">Esqueci minha senha</a>
+    </div>
+
+    <div class="social-login">
+      <button (click)="loginWithGoogle()" class="google-btn">Login com Google</button>
+      <button (click)="loginWithOutlook()" class="outlook-btn">Login com Outlook</button>
+    </div>
+
+    <p>Não tem conta? <button (click)="register()" class="register-btn">Cadastre-se</button></p>
+  </div>
+</div>

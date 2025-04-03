@@ -1,0 +1,9 @@
+<div class="home-container">
+  <h1>Bem-vindo ao MyFlix</h1>
+  <div class="video-list">
+    <div *ngFor="let video of videos" class="video-item" (click)="watchVideo(video.id)">
+      <img [src]="video.thumb" alt="thumbnail">
+      <p>{{ video.title }}</p>
+    </div>
+  </div>
+</div>

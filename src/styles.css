@@ -1,1 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: white;
+}
+
+.login-container, .home-container, .video-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.video-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.video-item {
+  cursor: pointer;
+  text-align: center;
+}
+.video-item img {
+  width: 150px;
+  border-radius: 8px;
+}
